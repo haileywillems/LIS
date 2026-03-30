@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Photos</title>
+    <style>
+        
+        img{
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <div id="box">
+        <h2>DOM get, Properties, and Methods</h2>
+        <img
+        id="photo"
+        class="picture"
+        src="images/First.png" 
+        alt="Game Image"
+        title="Game"
+        width="300px"
+        height="300px">
+        <br>
+        <button onclick="one()">Life Is Strange</button>
+        <button onclick="two()">Life Is Strange: Before the Storm</button>
+        <button onclick="three()">Life Is Strange 2</button>
+        <button onclick="four()">Life Is Strange: True Colors</button>
+        <button onclick="five()">Life Is Strange: Double Exposure</button>
+        <button onclick="six()">Life Is Strange: Reunion</button>
+
+        <!-- <div id="output">Output will apear here...</div> -->
+    </div>
+
+    <script>
+        let image = document.getElementById('photo')
+        let container = document.getElementById('box')
+        console.log(image)
+        console.log(container)
+        console.log(image.getAttribute('src'))
+
+        function one(){
+            image.setAttribute('src', 'images/First.png')
+        }
+        function two(){
+            image.setAttribute('src', 'images/LIS_Before.jpg')
+        }
+        function three(){
+            image.setAttribute('src', 'images/Second.jpg')
+        }
+        function four(){
+            image.setAttribute('src', 'images/LIS_True_Colors.avif')
+        }
+        function five(){
+            image.setAttribute('src', 'images/LIS_Double_Exposure.jpg')
+        }
+        function six(){
+            image.setAttribute('src', 'images/LIS_Reunion.jpg')
+        }
+    </script>
+</body>
+</html>
